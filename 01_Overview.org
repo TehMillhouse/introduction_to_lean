@@ -156,7 +156,7 @@ assuming the definition does not depend on nonconstructive components
 in an essential way, every closed term of type =ℕ= evaluates to a
 numeral. Lean's kernel can carry out this evaluation:
 #+BEGIN_SRC lean
-#eval (27 + 9) * 33
+#reduce (27 + 9) * 33
 #+END_SRC
 As part of the kernel, the results of this evaluation can be highly
 trusted. The evaluator is not very efficient, however, and is not
